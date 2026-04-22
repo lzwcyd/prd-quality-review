@@ -1,0 +1,23 @@
+.gitignore
+  1f3a1bed340bfff4 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "4941efc3060fe35c5c83777af11560df878f7456",
+  "prompts": {
+    "1f3a1bed340bfff4": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "77c5ae82-042e-4300-8e63-89302028acd8",
+        "model": "claude-opus-4-7-thinking-xhigh"
+      },
+      "human_author": "李志伟",
+      "messages": [],
+      "total_additions": 12,
+      "total_deletions": 0,
+      "accepted_lines": 12,
+      "overriden_lines": 0
+    }
+  }
+}
