@@ -1,35 +1,15 @@
 ---
 name: prd-quality-review
 description: >-
-  Reviews and scores Product Requirement Documents (PRD) across 10 weighted
-  dimensions with P0/P1/P2 severity-graded checklists, OPTIONALLY enhanced by
-  reading the target codebase (default: current working directory) to cross-
-  validate field naming, data models, existing APIs, validation logic, schema
-  compatibility, integration feasibility and historical migration evidence —
-  producing a structured quality report (score, grade, issue list, code-evidence
-  cross-references, top fixes). Each dimension contains 10+ probing questions
-  distilled from real high-quality PRDs (债转/账务/资管 domain) plus industry best
-  practices (completeness, clarity, consistency, testability, risk
-  identification, edge-case coverage, traceability, code-PRD alignment). Use
-  when the user mentions PRD 评估 / PRD 评审 / PRD 质量 / PRD review / PRD 打分 /
-  PRD 检查 / PRD 审核 / PRD 验收 / PRD 体检 / PRD 复盘 / PRD 质量门禁 /
-  PRD checklist / 评估这份 PRD / 评估这份需求 / 评估一下需求 / 评估需求质量 /
-  评分 PRD / 评分需求 / 给 PRD 打个分 / 给需求打分 / 看下这个 PRD 写得怎么样 /
-  看下这份需求 / 帮我看看这份 PRD / 帮我评一下这个需求 / 帮我审一下这份 PRD /
-  这份 PRD 怎么样 / 这个需求写得清楚吗 / 需求质量 / 需求评审 / 需求审核 /
-  需求体检 / 需求复盘 / 需求 review / 产品文档评审 / 产品文档审核 / 产品评审 /
-  PRD vs codebase / PRD 与代码对齐 / 需求对照代码评审 / PRD 代码一致性 /
-  评估代码与 PRD 一致性 / 结合代码评估 PRD / 看 PRD 和代码是否一致 /
-  prd-quality-review / quality gate / rubric, OR provides a PRD file
-  (.md/.docx) and asks for feedback/scoring/audit, OR provides BOTH a PRD and
-  a code directory and asks for alignment review, OR references this skill's
-  own files (checklists/01-metadata.md ... 10-testability.md,
-  checklists/code-context-overlay.md, templates/report-template.md,
-  examples/good-prd-patterns.md). Do NOT trigger when the user wants to
-  GENERATE a PRD from scratch, or wants 系分文档 (defer to prd-to-design), or
-  wants code generation (defer to prd-to-code / design-to-code). On ambiguity
-  (only a PRD is provided, no clear intent), ask the user A=评审打分 /
-  B=生成系分 / C=直接写代码.
+  Review and score PRDs across weighted quality dimensions with P0/P1/P2
+  findings, optionally using the target codebase to check field names, data
+  models, APIs, validation, schema compatibility, integrations, and migration
+  evidence. Use when the user asks for PRD 评估、评审、质量检查、打分、审核、验收、
+  体检、复盘、PRD review、checklist、质量门禁, asks whether a requirement is clear,
+  requests feedback/scoring/audit for a PRD file, or wants PRD vs codebase /
+  PRD 与代码对齐 / 需求对照代码评审. Do not use to generate a PRD, create 系分文档,
+  or write code; ask to choose 评审打分, 生成系分, or 直接写代码 when intent is
+  ambiguous.
 ---
 
 # PRD Quality Review（PRD 质量评审 Skill）
